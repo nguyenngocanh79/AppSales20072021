@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.MainActivity"
+    android:weightSum="3">
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/disk"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        <TextView
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/petemossregular"
+            android:text="AppSales"
+            android:textSize="80sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.google.android.material.textfield.TextInputLayout
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            app:startIconTint="#039BE5"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            app:hintTextColor="#039BE5"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="#039BE5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name (Ex: Nguyễn Văn Tèo)" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:startIconDrawable="@drawable/ic_baseline_map_24"
+            app:startIconTint="#039BE5"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            app:hintTextColor="#039BE5"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="#039BE5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address (Ex: Quận 1)" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:startIconDrawable="@drawable/ic_mail_24"
+            app:startIconTint="#039BE5"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            app:hintTextColor="#039BE5"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="#039BE5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email (Ex: abc@gmail.com)" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:startIconDrawable="@drawable/ic_baseline_phone_24"
+            app:startIconTint="#039BE5"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            app:hintTextColor="#039BE5"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="#039BE5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Phone (Ex: 0908xxxxxx)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:startIconTint="#039BE5"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            app:hintTextColor="#039BE5"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="#039BE5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bg_button_conner"
+            android:elevation="5dp"
+            android:paddingHorizontal="15dp"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>
